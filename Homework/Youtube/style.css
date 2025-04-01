@@ -246,3 +246,17 @@ body > .info {
     font-size: var(--font-micro);
     color: var(--grey-dark-color);
 }
+
+.grid-container {
+    display: grid;
+    grid-template-colums: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
