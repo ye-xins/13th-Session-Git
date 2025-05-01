@@ -5,6 +5,10 @@ body {
     color: #333;
 }
 
+.todo-form {
+    display: none;
+}
+
 .container {
     width: 90%;
     max-width: 1600px;
@@ -46,9 +50,9 @@ body {
 }
 
 .profile, .calendar, .footer {
-    background-color: rgb(218, 239, 218); /* 각 요소에 배경색 추가 */
+    background-color: rgb(218, 239, 218);
     padding: 10px;
-    border-radius: 10px; /* 각 요소 모서리 둥글게 */
+    border-radius: 10px;
 }
 
 .profile {
@@ -89,7 +93,7 @@ body {
 }
 
 .calendar td:hover {
-    background-color: #c8e6c9; /* 마우스를 올렸을 때 색이 변하도록 설정 */
+    background-color: #c8e6c9;
 }
 
 .todo, .finish {
@@ -129,9 +133,28 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f0fdf4; /* 연한 연두색 배경 */
-    border-radius: 999px;       /* 완전한 pill 모양 */
+    background-color: #f0fdf4;
+    border-radius: 999px;
     padding: 6px 12px;
     margin-bottom: 10px;
     width: fit-content;
+}
+
+.dot {
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffcdcd;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.check-icon {
+    color: #ffcdcd;
+}
+
+.todo-list li, .done-list li {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
