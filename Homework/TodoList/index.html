@@ -25,7 +25,7 @@
                 <strong>2025년 5월</strong>
                 <table>
                     <tr><td>일</td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td><td>토</td></tr>
-                    <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td style="background-color: #ffcdcd;">1</td><td>2</td><td>3</td></tr>
                     <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
                     <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
                     <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
@@ -40,17 +40,20 @@
             <div class="todo-header">
                 <h2>🎈 TO-DO <button onclick="addTodo()">＋</button></h2>
             </div>
-            <p>오늘 할일을 등록해주세요!</p>
-            <input type="text" class="todo-input" placeholder="할 일 입력하기">
-            <ul id="todo-list"></ul>
+            <p class="todo-message">오늘 할일을 등록해주세요!</p>
+            <form class="todo-form">
+                <input type="text" class="todo-input" placeholder="내용을 입력해주세요.">
+            </form>
+            <ul id="todo-list" class="todo-list"></ul>
         </div>
     
         <!-- 오른쪽 FINISH -->
         <div class="finish">
             <h2>👏 FINISH</h2>
-            <ul id="done-list"></ul>
+            <ul id="done-list" class="done-list"></ul>
         </div>
         </div>
         </div>
+        <script src="todolist.js"></script>
 </body>
 </html>
