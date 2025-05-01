@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #4d5f42;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1600px;
+    height: 90%;
+    margin: 30px auto;
+    background-color: #2e4006;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.header {
+    background-color: #5a2e2e;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header span {
+    font-size: 18px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #2e4006;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile, .calendar, .footer {
+    background-color: rgb(218, 239, 218); /* 각 요소에 배경색 추가 */
+    padding: 10px;
+    border-radius: 10px; /* 각 요소 모서리 둥글게 */
+}
+
+.profile {
+    margin-bottom: 0;
+}
+
+.profile img {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.calendar {
+    margin-top: 10;
+    margin-bottom: 10;
+}
+
+.calendar table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.calendar td {
+    padding: 0;
+    width: 14%;
+    height: 0;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    
+}
+
+.calendar td:hover {
+    background-color: #c8e6c9; /* 마우스를 올렸을 때 색이 변하도록 설정 */
+}
+
+.todo, .finish {
+    background-color: #f1f8e9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.todo h2, .finish h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-input {
+    margin-top: 10px;
+    padding: 5px;
+    width: 90%;
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 0;
+    font-size: 14px;
+    color: #888;
+}
